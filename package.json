@@ -18,18 +18,19 @@
     ".": "./dist/file-storage.js",
     "./local": "./dist/local.js",
     "./memory": "./dist/memory.js",
+    "./aws": "./dist/aws.js",
     "./package.json": "./package.json"
   },
   "devDependencies": {
     "@types/node": "^20.14.10",
     "prettier": "^3.3.3",
-    "tsimp": "^2.0.11",
-    "typescript": "^5.5.3"
+    "typescript": "^5.5.3",
+    "vitest": "^2.0.5"
   },
   "scripts": {
     "clean": "git clean -fdX .",
     "build": "tsc --outDir dist --project tsconfig.lib.json",
-    "test": "node --import tsimp/import --test ./src/**/*.spec.ts",
+    "test": "vitest run",
     "prepare": "npm run build",
     "version": "node scripts/version.js"
   },
@@ -41,6 +42,10 @@
     "fs"
   ],
   "dependencies": {
-    "@mjackson/lazy-file": "^2.2.0"
+    "@mjackson/lazy-file": "^3.0.0"
+  },
+  "optionalDependencies": {
+    "@aws-sdk/client-s3": "^3.637.0",
+    "@aws-sdk/lib-storage": "^3.637.0"
   }
 }
