@@ -1,4 +1,4 @@
-# IMPORTANT: This repository has moved to [@mjackson/remix-the-web](https://github.com/mjackson/remix-the-web/tree/main/packages/file-storage
+# IMPORTANT: This repository has moved to [@mjackson/remix-the-web](https://github.com/mjackson/remix-the-web/tree/main/packages/file-storage)
 
 # file-storage
 
