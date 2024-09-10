@@ -1,3 +1,5 @@
+# IMPORTANT: This repository has moved to [@mjackson/remix-the-web](https://github.com/mjackson/remix-the-web/tree/main/packages/file-storage
+
 # file-storage
 
 `file-storage` is a key/value interface for storing [`File` objects](https://developer.mozilla.org/en-US/docs/Web/API/File) in JavaScript. Similar to how `localStorage` allows you to store key/value pairs of strings in the browser, `file-storage` allows you to store key/value pairs of files on the server.
